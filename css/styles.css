@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
+
+button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+*{
+    font-family: 'Raleway', sans-serif;    
+}
+
+body{
+    padding-top: 80px;
+    min-height: 100vh;
+    background-color: rgb(82, 86, 100);
+    display: block;
+}
+
+.card{
+    position: relative;
+    height: 500px;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    box-shadow: 0 5px 10px 0.5px rgb(0, 0 , 0, 0.3);
+}
+
+.card__cover{
+    height: 30%;
+    width: 100%;
+    background-image: url("../img/fondo.png");
+    background-size: cover;  /*para ajustar el tamalo de la imagen al espacio*/
+        
+}
+
+.card__profile{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: calc(30% - 100px);
+    left: calc(50% - 100px);
+    background-color: aqua;
+    border-radius: 100px;
+    outline: 10px solid #fff; /*El borde contemplando el total de la imagen*/
+    background-image: url("../img/perfil.jpg");
+    background-size: cover;
+}
+
+.card__userInfo{
+    position: relative;
+    top: 10px;
+}
+
+
+/*Para seleccionar todos los elementos dentro de card__userInfo*/
+.card__userInfo > *{
+    padding: 0;
+    margin: 0;
+}
+
+.card_title{
+    font-weight: 400;
+    font-size: 25px;
+
+}
+
+.card__userName{
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.card__contain{
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+}
+
+.card__contain > * {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card__btn-social{
+    margin: 10px 5px 25px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.card__btn-social--facebook{
+    background-color: rgb(82, 93, 243);
+}
+
+.card__btn-social--twitter{
+    background-color: rgb(35, 228, 235);
+}
+
+.card__btn-social--linkedin{
+    background-color: rgb(41, 22, 211);
+}
